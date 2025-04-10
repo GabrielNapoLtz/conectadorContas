@@ -1,4 +1,4 @@
-# conectadorContas ✨
+# SuperConectador3000 ✨
 
 Automatize a criação e ativação de contas no WhatsApp usando instâncias LDPlayer, números SMS Activate e controle via Python com interface customtkinter. Ideal para testes em massa, automação comercial e integrações.
 
@@ -33,13 +33,25 @@ Automatize a criação e ativação de contas no WhatsApp usando instâncias LDP
   - `config_indonesia.py`
 
 ### VPN com ProtonVPN (recomendado)
-- Baixe e instale o [ProtonVPN CLI ou GUI](https://protonvpn.com/)
-- Exporte um perfil `.ovpn` da sua conta Proton (via painel web)
-- Salve o arquivo `.ovpn` e um `auth.txt` com usuário/senha
+- Baixe o **OpenVPN** no site oficial: https://openvpn.net/community-downloads/
+- Instale o OpenVPN em sua máquina
+- Após instalar:
+  - Vá até a pasta onde o OpenVPN foi instalado (ex: `C:\Program Files\OpenVPN\bin`)
+  - Copie esse caminho
+  - Abra o menu Iniciar e pesquise por **variáveis de ambiente**
+  - Clique em **Variáveis de Ambiente > Path > Editar > Novo**
+  - Cole o caminho e salve
+- Baixe o arquivo `.ovpn` da sua conta ProtonVPN (via painel web)
+- Crie um `auth.txt` com:
+  ```
+  SEU_USUARIO
+  SUA_SENHA
+  ```
 - O sistema já está preparado para:
   - Conectar automaticamente à VPN antes de cada ciclo
-  - Usar IPs diferentes por sessão
+  - Usar IPs diferentes por sessão usando esse `.ovpn`
 
+---
 
 ## 🔢 Como usar (passo a passo)
 
@@ -58,13 +70,11 @@ Automatize a criação e ativação de contas no WhatsApp usando instâncias LDP
    ```
 
 3. **Configure a VPN:**
-   - Salve seu `.ovpn` com os dados da sua conta
-   - Crie um `auth.txt` com:
-     ```
-     SEU_USUARIO
-     SUA_SENHA
-     ```
-   - O sistema usará isso automaticamente para conectar via script antes de iniciar os ciclos
+   - Baixe e instale o OpenVPN (https://openvpn.net/community-downloads/)
+   - Adicione o caminho do executável `openvpn.exe` ao Path do sistema (veja instruções acima)
+   - Salve seu `.ovpn` com os dados da sua conta Proton
+   - Crie um `auth.txt` com login e senha
+   - O sistema já usa esse `.ovpn` automaticamente antes de iniciar o ciclo
 
 4. **Rode o programa:**
    ```bash
@@ -92,5 +102,5 @@ Automatize a criação e ativação de contas no WhatsApp usando instâncias LDP
 
 ---
 
-## ✨ Feito com carinho pelo Gabriel Napo 💻
+## ✨ Feito com carinho pelo Gabriel Napo 🐒💻
 
