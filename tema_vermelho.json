@@ -1,0 +1,35 @@
+{
+  "CTk": {
+    "fg_color": ["#12121c", "#12121c"]  
+  },
+  "CTkFont": {
+    "family": "Segoe UI",
+    "size": 13,
+    "weight": "normal"
+  },
+  "CTkButton": {
+    "fg_color": ["#3333aa", "#3333aa"],
+    "hover_color": ["#4f4fdd", "#4f4fdd"],
+    "text_color": ["#ffffff", "#ffffff"],
+    "text_color_disabled": ["#888888", "#888888"],
+    "corner_radius": 8,
+    "border_width": 1,
+    "border_color": ["#7777ff", "#7777ff"]
+  },
+  "CTkLabel": {
+    "fg_color": "transparent",
+    "text_color": ["#ddddff", "#ddddff"],
+    "corner_radius": 0
+  },
+  "CTkEntry": {
+    "fg_color": ["#1a1a2e", "#1a1a2e"],
+    "border_color": ["#4f4fdd", "#4f4fdd"],
+    "text_color": ["#ffffff", "#ffffff"],
+    "placeholder_text_color": ["#aaaaee", "#aaaaee"],
+    "border_width": 2,
+    "corner_radius": 6
+  },
+  "CTkToplevel": {
+    "fg_color": ["#1a1a1a", "#1a1a1a"]
+  }
+}
